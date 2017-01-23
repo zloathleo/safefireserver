@@ -6,6 +6,7 @@ import (
 	"fmt"
 
 	"github.com/ugorji/go/codec"
+	"safefire.com/powermax/utils"
 )
 
 type value struct {
@@ -15,6 +16,7 @@ type value struct {
 }
 
 func main() {
+	utils.Ping()
 	fmt.Println("Hello, word")
 	var testValue = &value{1000, 99, 998}
 
@@ -38,7 +40,5 @@ func main() {
 	fmt.Println(err2)
 
 	fmt.Println(value2.Status)
-
-	
 
 }
