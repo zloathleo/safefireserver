@@ -39,4 +39,6 @@ func main() {
 
 	fmt.Println(value2.Status)
 
+	
+
 }
